@@ -1,13 +1,24 @@
-import './App.css';
+import { Component } from 'react';
+import Home from './Components/Home'; 
 
-// import Home from './Components/Home';
+class App extends Component {
+  constructor() {
+    super();
+    
+    
+    this.state = {
+      names: ["John", "Alice", "Bob", "Eve"]
+    };
+  }
 
-function App() {
-  return (
-    <div className="App">
-      {/* <Home></Home> */}
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        
+        <Home names={this.state.names} />
+      </div>
+    );
+  }
 }
 
 export default App;
