@@ -7,7 +7,7 @@ class App extends Component {
     
     
     this.state = {
-      names: ["John", "Alice", "Bob", "Eve"]
+      names: ["Iron Man", "Captian America" , "Hulk", "Spider Man"]
     };
   }
 

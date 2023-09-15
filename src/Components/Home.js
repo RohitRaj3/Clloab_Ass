@@ -20,15 +20,16 @@ const Home = (props) => {
 
   return (
     <div className={styles['center-both']}>
-    {/* here we are passing css moduleas an object */}
+    {/* here passing css moduleas an object */}
       <h1 className={fade ? `${styles['fade-in']} ${styles['center-both']}` : ''}> 
         {currentName}
       </h1>
       <button onClick={handleButtonClick}>Next</button>
       <ul>
-        {/* {names.map((name, index) => (
+      {/* this will display the list of names */}
+        {names.map((name, index) => (
           <li key={index}>{name}</li>
-        ))} */}
+        ))}
       </ul>
     </div>
   );
